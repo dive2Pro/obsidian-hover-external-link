@@ -24,6 +24,8 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
+    "@tippyjs/react": "^4.2.6",
+    "obsidian-community-lib": "^1.4.2",
     "tippy.js": "^6.3.1"
   }
 }

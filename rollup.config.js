@@ -8,7 +8,7 @@ const isProd = process.env.NODE_ENV === "production";
 export default {
   input: "src/main.ts",
   output: {
-    dir: "./dist",
+    dir: ".",
     sourcemap: "inline",
     sourcemapExcludeSources: isProd,
     format: "cjs",
@@ -21,14 +21,14 @@ export default {
     commonjs(),
     copy({
       targets: [
-        {
-          src: "manifest.json",
-          dest: "dist/",
-        },
-        {
-          src: "styles.css",
-          dest: "dist/",
-        },
+        // {
+        //   src: "manifest.json",
+        //   dest: ".",
+        // },
+        // {
+        //   src: "styles.css",
+        //   dest: ".",
+        // },
       ],
     }),
   ],
