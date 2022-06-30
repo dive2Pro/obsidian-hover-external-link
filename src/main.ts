@@ -20,7 +20,7 @@ export default class HoverLinkPlugin extends Plugin {
     } else if (shiftKey) {
       modifier = "shift";
     }
-    if (modifier !== "meta") {
+    if (modifier !== "shift") {
       return;
     }
     if (
